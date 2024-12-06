@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "3P-Block",
+  "version": "1.0",
+  "description": "Blocks all third-party scripts, images, frames, and fonts.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icons/icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "block3rdparty@nan.com",
+      "strict_min_version": "70.0"
+    }
+  }
+}
