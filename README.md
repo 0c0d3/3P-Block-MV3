@@ -1,6 +1,6 @@
 # 3P-Block-MV3
 
-Blocks all third-party scripts, images, frames, and fonts
+Blocks scripts, images, frames, and more
 No weird or hidden scripts, no complex structures, just simple.
 An blocker made with zero code.
 
