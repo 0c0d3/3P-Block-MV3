@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "3P-Block",
   "version": "1.0",
-  "description": "Blocks all third-party scripts, images, frames, and fonts.",
+  "description": "Blocks all scripts, images, frames, and more.",
   "permissions": [
     "declarativeNetRequest",
     "declarativeNetRequestWithHostAccess",
