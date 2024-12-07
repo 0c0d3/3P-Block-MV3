@@ -6,19 +6,19 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.declarativeNetRequest.updateDynamicRules({
       addRules: [
         {
-          id: 1001,  // Unique ID for this rule
+          id: 144431,  // Unique ID for this rule
           action: { type: 'block' },
           condition: {
             urlFilter: "*://*/*",  // Apply to all URLs
-            resourceTypes: ["script", "image", "sub_frame", "font"]  // Block script, image, subframe, and font
+            resourceTypes: ["font", "image", "media", "script", "stylesheet", "sub_frame"]  
           }
         },
         {
-          id: 1002,  // Another unique ID for the next rule (if needed)
+          id: 133443,  // Another unique ID for the next rule (if needed)
           action: { type: 'block' },
           condition: {
             urlFilter: "*://*/*",  // Apply to all URLs
-            resourceTypes: ["xmlhttprequest"]  // Block XMLHttpRequests (optional)
+            resourceTypes: ["ping"]  // 
           }
         }
       ],
@@ -29,3 +29,4 @@ chrome.runtime.onInstalled.addListener(() => {
     console.error("Error setting declarative rules:", err);
   }
 });
+
